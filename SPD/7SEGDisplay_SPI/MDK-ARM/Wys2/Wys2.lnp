@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"wys2\startup_stm32f411xe.o"
+"wys2\system_stm32f4xx.o"
+"wys2\stm32f4xx_it.o"
+"wys2\main.o"
+"wys2\stm32f4xx_hal_msp.o"
+"wys2\stm32f4xx_hal_pwr_ex.o"
+"wys2\stm32f4xx_hal_flash_ramfunc.o"
+"wys2\stm32f4xx_hal_tim.o"
+"wys2\stm32f4xx_hal_gpio.o"
+"wys2\stm32f4xx_hal_rcc_ex.o"
+"wys2\stm32f4xx_hal_flash_ex.o"
+"wys2\stm32f4xx_hal.o"
+"wys2\stm32f4xx_hal_dma_ex.o"
+"wys2\stm32f4xx_hal_tim_ex.o"
+"wys2\stm32f4xx_hal_spi.o"
+"wys2\stm32f4xx_hal_flash.o"
+"wys2\stm32f4xx_hal_dma.o"
+"wys2\stm32f4xx_hal_rcc.o"
+"wys2\stm32f4xx_hal_pwr.o"
+"wys2\stm32f4xx_hal_cortex.o"
+--library_type=microlib --strict --scatter "Wys2\Wys2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Wys2.map" -o Wys2\Wys2.axf
